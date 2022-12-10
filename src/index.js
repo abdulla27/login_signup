@@ -1,0 +1,35 @@
+// const express=require("express")
+// const app=express()
+// const path=require("path")
+
+// //console.log(path.join(__dirname,"../public"))
+// const staticpath=path.join(__dirname,"../public")
+// app.use(express.static(staticpath))
+// app.get ("/",(req,res)=>{console.log("hello from home")})    ////(ye line na likho tab bhi koi dikkat nhi hai server index.html file wala hi read karta hai)
+
+// app.listen(8000,()=>{console.log("listenin")})
+
+                    ////(again practice)
+const express=require("express")
+const app=express()
+const path=require("path")
+
+// console.log(path.join(__dirname,"../public"))
+const staticpath=path.join(__dirname,"../public")
+app.use(express.static(staticpath))
+app.listen(8000,()=>{console.log("listening")})
+
+                //// (****template engines (pug,hbs,ejs) in node.js)(abhi ye template engine nhi kiya hai pura)
+// const express=require("express")
+// const app=express()
+// const path=require("path")
+// // console.log(path.join(__dirname,"../views"))
+// //// (built in middleware)
+// const staticpath=path.join(__dirname, "../public")
+
+// ////(to set the view engine)
+// app.set ("view engine","hbs")
+// // app.use(express.static(staticpath))
+// app.get("",(req,res)=>{res.render("index.hbs")})
+// app.get("/",(req,res)=>{res.send("hello express")})
+// app.listen(3000,()=>{console.log("listening the port")})
